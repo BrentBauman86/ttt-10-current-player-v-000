@@ -5,3 +5,10 @@ def turn_count(board)
         count += 1
       end
     end
+
+def current_player(board)
+  board.select {|num| num.even?}
+  board.select {|num| num.odd?}
+end
+end
+
