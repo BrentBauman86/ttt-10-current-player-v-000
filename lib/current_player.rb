@@ -7,7 +7,7 @@ def turn_count(board)
     end
 
 def current_player(board)
-  if turn_count(board).even? == "X" || turn_count(board).odd? == "O"
+  if turn_count(board).select {|num| num.even?} == "X" || turn_count(board).select {|num| num.odd?} == "O"
 
 
 end
