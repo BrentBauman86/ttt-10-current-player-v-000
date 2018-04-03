@@ -8,5 +8,7 @@ def turn_count(board)
 
 def current_player(board)
   if turn_count(board).select {|num| num.even?} || turn_count(board).select {|num| num.odd?}
+else
+  false
 end
 end
